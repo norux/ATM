@@ -1,0 +1,19 @@
+{
+  "name": "atm",
+  "version": "1.0.0",
+  "description": "A Time Manager",
+  "main": "app.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norux/ATM.git"
+  },
+  "author": "The ATM Team"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/norux/ATM/issues"
+  },
+  "homepage": "https://github.com/norux/ATM#readme"
+}
