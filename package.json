@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/norux/ATM.git"
   },
-  "author": "The ATM Team"
+  "author": "The ATM Team",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/norux/ATM/issues"

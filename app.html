@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko" ng-app="atmApp">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body ng-controller="mainCtrl">
+    <div ng-include= "'view/navi.html'"></div>
+    <div ng-include="'view/list.html'"></div>
+
+    <script src="lib/components/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/mainCtrl.js"></script>
+</body>
+</html>
