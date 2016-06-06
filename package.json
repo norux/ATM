@@ -2,7 +2,7 @@
   "name": "atm",
   "version": "1.0.0",
   "description": "A Time Manager",
-  "main": "app.html",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/norux/ATM/issues"
   },
-  "homepage": "https://github.com/norux/ATM#readme"
+  "homepage": "https://github.com/norux/ATM#readme",
+  "devDependencies": {
+    "bower": "1.7.9",
+    "electron-packager": "7.0.3",
+    "electron-prebuilt": "1.2.1"
+  }
 }

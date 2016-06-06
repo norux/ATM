@@ -28,10 +28,15 @@ node_modules
 
 # Optional npm cache directory
 .npm
+.bowerrc
+.DS_Store
+.idea
 
 # Optional REPL history
 .node_repl_history
 
-
 # Common Modules
-lib/angular
+lib/components
+
+# build directory
+out
