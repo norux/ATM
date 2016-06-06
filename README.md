@@ -11,10 +11,12 @@ A Time Manager
 
 
 ### 빌드 방법
-
 **1. MacOS, Linux에서 빌드**
+
 Linux 또는 OS X에서 build.sh 쉘 스크립트를 실행시킨다.
 프로젝트에 필요한 모듈을 자동으로 설치한 이후 out 폴더를 생성하여 모든 플랫폼에 대한 빌드를 완료한다.
 
 **2. Windows에서 빌드**
+
+
 아직 Windows에서의 빌드는 지원하지 않는다.
