@@ -1,0 +1,84 @@
+@charset "UTF-8";
+body, html {
+  margin: 0;
+  padding: 0; }
+
+html, body, p, div, ul, li,
+span, a, a:link, a:visited, a:hover, a:active, label, table, button {
+  margin: 0;
+  padding: 0;
+  font-family: 돋움, dotum, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px; }
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-block; }
+
+.l-header {
+  height: 30px;
+  padding: 0;
+  background-color: #205081; }
+  .l-header:after {
+    display: block;
+    content: "";
+    clear: both; }
+
+.l-timer {
+  padding: 10px;
+  background-color: #eee;
+  border-bottom: 2px solid #aaa; }
+
+.l-list-header {
+  height: 18px;
+  padding: 3px 10px;
+  background-color: #205081;
+  color: #fff; }
+
+.l-issue-list {
+  border-bottom: 2px solid #aaa; }
+
+.top-menu {
+  float: left;
+  width: 50px;
+  padding: 4px;
+  height: 22px;
+  border-right: 1px solid #102841;
+  text-align: center;
+  color: #fff; }
+
+.account-util {
+  float: right;
+  padding: 4px 10px;
+  height: 22px;
+  border-left: 1px solid #102841; }
+
+.account-util .user-name {
+  color: #fff;
+  vertical-align: middle; }
+
+.account-util .btn-logout {
+  padding: 1px 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  margin-left: 10px; }
+
+.timer-window {
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff; }
+
+.timer-controller {
+  margin: 10px 0 0 0;
+  text-align: center; }
+
+.timer-btn {
+  margin-left: 10px; }

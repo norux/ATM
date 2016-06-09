@@ -1,0 +1,28 @@
+@import variables
+
+body, html
+  margin: 0
+  padding: 0
+
+html, body, p, div, ul, li,
+span, a, label, table, button
+  margin: 0
+  padding: 0
+  font-family: $font-stack
+  font-size: 14px
+  line-height: 18px
+
+a
+  text-decoration: none
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active
+    @extend a
+
+button
+  border: none
+  background: none
+  cursor: pointer
+  display: inline-block

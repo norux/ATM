@@ -1,1 +1,1 @@
-angular.module('atmApp',[]);
+angular.module('atmApp',['ui.grid']);

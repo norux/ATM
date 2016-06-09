@@ -1,0 +1,23 @@
+@import mixins
+@import variables
+
+.l-header
+  height: $l-header-height
+  padding: 0
+  background-color: $primary-color
+  &:after
+    +clear-fix()
+
+.l-timer
+  padding: 10px
+  background-color: #eee
+  border-bottom: 2px solid #aaa
+
+.l-list-header
+  height: 18px
+  padding: 3px 10px
+  background-color: $primary-color
+  color: #fff
+
+.l-issue-list
+  border-bottom: 2px solid #aaa

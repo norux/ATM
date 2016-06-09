@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>ATM</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="lib/components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/components/angular-ui-grid/ui-grid.min.css">
+    <link rel="stylesheet" href="css/dist/style.css">
 </head>
 <body ng-controller="mainCtrl">
-    <div ng-include= "'view/navi.html'"></div>
+    <div ng-include="'view/header.html'"></div>
+    <div ng-include= "'view/timer.html'"></div>
     <div ng-include="'view/list.html'"></div>
 
     <script src="lib/components/angular/angular.min.js"></script>
+    <script src="lib/components/angular-ui-grid/ui-grid.min.js"></script>
     <script src="app.js"></script>
     <script src="controllers/mainCtrl.js"></script>
 </body>

@@ -11,9 +11,9 @@ echo "npm installing.."
 npm install
 echo "finished npm install"
 
-echo "bower installing.."
-$BOWER install
-echo "finished bower install"
+#echo "bower installing.."
+#$BOWER install
+#echo "finished bower install"
 
 echo "electron-packager . --all --out=${BUILD_DIR}"
 $CURRENT_DIR/$ELECTRON_PACKAGER $CURRENT_DIR --all --out=$BUILD_DIR --overwrite
