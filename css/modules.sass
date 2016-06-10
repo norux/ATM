@@ -27,17 +27,57 @@
   background-color: #fff
   margin-left: 10px
 
-
 .timer-window
-  height: 50px
+  position: relative
+  height: 20px
   padding: 10px
+  margin-bottom: 10px
   border: 1px solid #ddd
   border-radius: 5px
   background-color: #fff
 
+.working-time
+  position: absolute
+  right: 80px
+  top: 10px
+  font-weight: bold
 .timer-controller
-  margin: 10px 0 0 0
+  position: absolute
+  display: inline-block
+  top: 5px
+  right: 10px
+  margin: 0 0 0 0
   text-align: center
 
 .timer-btn
   margin-left: 10px
+
+.window-tab
+  position: relative
+  background-color: #aaa
+  padding: 3px 5px 0px 5px
+
+  .tab-elem
+    display: inline-block
+    padding: 2px 8px
+    background: linear-gradient(to bottom, #888 0%, #777 100%)
+    border-radius: 3px 3px 0 0
+    color: #ccc
+    border: 1px solid #8c8c8c
+    border-bottom: none
+    cursor: pointer
+    font-size: 12px
+
+    &.is-selected
+      padding: 3px 8px
+      background: linear-gradient(to bottom, #fff 0%, #e5e5e5 100%)
+      color: #4d4d4d
+      font-weight: bold
+
+  .btn-add
+    position: absolute
+    top: 6px
+    right: 10px
+
+
+
