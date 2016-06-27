@@ -29,16 +29,16 @@ Linux 또는 OS X에서 build.sh 쉘 스크립트를 실행시킨다.
 ### 테스트
 **1. maxOS, Linux에서 테스트**
 
-1. 디버그툴과 함께 실행
+- 디버그툴과 함께 실행
 ```bash
 ./runDevTools.sh
 ```
 
-2. 디버그창 없이 실행
+- 디버그창 없이 실행
 ```bash
 ./runAlone.sh
 ```
 
-**2. Windows에서 테스트 **
+**2. Windows에서 테스트**
 
 아직 Windows에서의 테스트는 지원하지 않는다.
