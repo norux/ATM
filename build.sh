@@ -16,6 +16,6 @@ echo "finished npm install"
 #$BOWER install
 #echo "finished bower install"
 
-echo "electron-packager . --all --out=${BUILD_DIR} --icon=$ICON"
-$CURRENT_DIR/$ELECTRON_PACKAGER $CURRENT_DIR --all --out=$BUILD_DIR --overwrite
+echo "electron-packager . --all --out=${BUILD_DIR} --icon=$ICON --asar=true --overwrite"
+$CURRENT_DIR/$ELECTRON_PACKAGER $CURRENT_DIR --all --out=$BUILD_DIR --asar=true --overwrite
 echo "finished all packaging"

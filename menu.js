@@ -1,5 +1,4 @@
-
-var remote = require('electron').remote;
+const electron = require('electron');
 var template = [
 	{
 		label: 'ATM',
@@ -72,13 +71,13 @@ var template = [
 			{
 				label: 'About',
 				click: function(item, focusedWindow) {
-					remote.dialog.showMessageBox({
+					dialog.showMessageBox({
 						type: 'info',
 						buttons: [],
-						title: 'About ' + remote.app.getName(),
+						title: 'About ' + electron.app.getName(),
 						icon: __dirname + '/resource/icon.png',
 						message: 'ATM은 시간 관리용 어플리케이션입니다.\n' +
-								 'Version: ' + remote.app.getVersion()
+								 'Version: ' + app.getVersion()
 					});
 				}
 			}
@@ -89,7 +88,7 @@ var template = [
 exports.createMenu = function() {
 
 	if (process.platform === 'darwin') {
-		const name = remote.app.getName();
+		const name = electron.app.getName();
 		template.unshift({
 			label: name,
 			submenu: [
@@ -120,7 +119,7 @@ exports.createMenu = function() {
 					label: 'Quit',
 					accelerator: 'Command+Q',
 					click: function() {
-						remote.app.quit();
+						electron.app.quit();
 					}
 				}
 			]
@@ -136,7 +135,6 @@ exports.createMenu = function() {
 		);
 	}
 
-	var Menu = remote.Menu;
-	const menu = Menu.buildFromTemplate(template);
-	Menu.setApplicationMenu(menu);
+	const menu = electron.Menu.buildFromTemplate(template);
+	electron.Menu.setApplicationMenu(menu);
 };
