@@ -1,4 +1,5 @@
 const electron = require('electron');
+const rootDirectory = require('./global').rootDirectory;
 var template = [
 	{
 		label: 'ATM',
@@ -71,13 +72,13 @@ var template = [
 			{
 				label: 'About',
 				click: function(item, focusedWindow) {
-					dialog.showMessageBox({
+					electron.dialog.showMessageBox({
 						type: 'info',
 						buttons: [],
 						title: 'About ' + electron.app.getName(),
-						icon: __dirname + '/resource/icon.png',
+						icon: rootDirectory + '/app/resource/icon.png',
 						message: 'ATM은 시간 관리용 어플리케이션입니다.\n' +
-								 'Version: ' + app.getVersion()
+								 'Version: ' + electron.app.getVersion()
 					});
 				}
 			}
