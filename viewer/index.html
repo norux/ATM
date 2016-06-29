@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="css/dist/style.css">
 </head>
 <body ng-controller="mainCtrl">
-    <div ng-include="'view/header.html'"></div>
-    <div ng-include="'view/timer.html'"></div>
-    <div ng-include="'view/list.html'"></div>
+    <div class="l-header">
+        <div class="top-menu">menu</div>
+        <div class="account-util">
+            <span class="user-name">이상준</span>
+            <button class="btn-logout">로그아웃</button>
+        </div>
+    </div>
 
     <script src="lib/components/angular/angular.min.js"></script>
     <script src="lib/components/angular-ui-grid/ui-grid.min.js"></script>
+
     <script src="app.js"></script>
-    <script src="controllers/mainCtrl.js"></script>
+    <script src="issueTimer/controllers/issueTimerCtrl.js"></script>
+    <script src="issueList/controllers/issueListCtrl.js"></script>
+
+    <div ng-include="'issueTimer/views/issueTimer.html'"></div>
+    <div ng-include="'issueList/views/issueList.html'"></div>
 </body>
 </html>
