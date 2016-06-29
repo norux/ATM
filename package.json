@@ -2,7 +2,7 @@
   "name": "ATM",
   "version": "1.0.0",
   "description": "A Time Manager",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall" : "npm install -g gulp",

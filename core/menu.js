@@ -1,5 +1,5 @@
 const electron = require('electron');
-const rootDirectory = require('./global').rootDirectory;
+const rootDirectory = __dirname + '/../';
 var template = [
 	{
 		label: 'ATM',
@@ -76,7 +76,7 @@ var template = [
 						type: 'info',
 						buttons: [],
 						title: 'About ' + electron.app.getName(),
-						icon: rootDirectory + '/app/resource/icon.png',
+						icon: require('../common/global').iconDir,
 						message: 'ATM은 시간 관리용 어플리케이션입니다.\n' +
 								 'Version: ' + electron.app.getVersion()
 					});
