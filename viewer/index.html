@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko" ng-app="atmApp">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>ATM</title>
@@ -16,12 +16,7 @@
         </div>
     </div>
 
-    <script src="lib/components/angular/angular.min.js"></script>
-    <script src="lib/components/angular-ui-grid/ui-grid.min.js"></script>
-
-    <script src="app.js"></script>
-    <script src="issueTimer/controllers/issueTimerCtrl.js"></script>
-    <script src="issueList/controllers/issueListCtrl.js"></script>
+    <script data-main="require-config" src="lib/components/requirejs/require.js"></script>
 
     <div ng-include="'issueTimer/views/issueTimer.html'"></div>
     <div ng-include="'issueList/views/issueList.html'"></div>
