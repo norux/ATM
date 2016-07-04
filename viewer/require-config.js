@@ -22,8 +22,8 @@ requirejs([
 		'angular',
 		'app',
 
-		'issueList/controllers/issueListCtrl',
-		'issueTimer/controllers/issueTimerCtrl'
+		'issueList/index',
+		'issueTimer/index'
 	],
 	function(angular) {
 		angular.element().ready(function() {
