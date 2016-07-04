@@ -76,7 +76,7 @@ var template = [
 						type: 'info',
 						buttons: [],
 						title: 'About ' + electron.app.getName(),
-						icon: require('../common/global').iconDir,
+						icon: require('../common/global').iconPath,
 						message: 'ATM은 시간 관리용 어플리케이션입니다.\n' +
 								 'Version: ' + electron.app.getVersion()
 					});

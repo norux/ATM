@@ -1,2 +1,4 @@
+const rootDir = __dirname + '/../';
+const resourceDir = rootDir + 'viewer/resource';
 
-exports.iconDir = __dirname + '/../resource/icon.png';
+exports.iconPath = resourceDir + '/icon.png';

@@ -8,7 +8,7 @@ exports.run = function() {
         mainWindow = new BrowserWindow({
             width: 800,
             height: 600,
-            icon: require('../common/global').iconDir
+            icon: require('../common/global').iconPath
         });
 
         mainWindow.loadURL('file://' + __dirname + '/../viewer/index.html');
